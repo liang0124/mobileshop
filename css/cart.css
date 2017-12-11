@@ -1,0 +1,324 @@
+body{
+	height:auto;
+}
+header{
+	width:100%;
+	height:5rem;
+}
+.header{
+	width:100%;
+	height:5rem;
+	background:deeppink;
+	position:fixed;
+	top:0px;
+	/*z-index:9;*/
+	display:flex;
+}
+.no1{
+	width:25%;
+}
+.no1 .prev{
+	width:2rem;
+	height:2rem;
+	margin-top:1.5rem;
+	margin-left:1rem;
+	text-align:center;
+}
+.no2{
+	width:50%;
+	margin-top:1.2rem;
+	color:white;
+	font-size:1.8rem;
+	text-align:center;
+}
+.no3{
+	width:25%;
+	margin-top:1.5rem;
+	font-size:1.6rem;
+	color:white;
+	text-align:center;
+}
+
+main {
+   width: 100%;
+   height:100%; 
+   overflow:hidden;
+ }
+ table{
+	overflow:hidden;
+}
+tr{
+   float:left;
+   margin-top:2rem;
+   width:100%;
+   height:10rem;
+   background: #fcfcfc;
+   overflow:hidden;
+}
+.tr-header{
+	width:100%;
+	height:3rem;
+	display:flex;
+	justify-content: space-around;
+}
+.chooses{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.imgs{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+	
+}
+.names{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:green;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.values{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.nums{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:blue;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.totals{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:red;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.operate{
+	float:left;
+	width:2rem;
+	height:1.5rem;
+	background:yellow;
+	margin-left:0rem;
+	margin-top:0rem;
+}
+.goodsId{
+ 	float:left;
+ 	margin-left:-1rem;
+ 	margin-top:3.2rem;
+ }
+.goods-Id{
+ 	width:2rem;
+ 	height:2rem;
+ 	float:left;
+ 	margin-left:2rem;
+ 	margin-top:0.5rem;
+ }
+  .goodsName{
+ 	width:18rem;
+ 	font-size:1.2rem;
+ 	float:left;
+ 	margin-left:12rem;
+ 	margin-top:-12rem;
+ }
+ .goods-thumb{
+ 	width:7rem;
+ 	height:7rem;
+ 	float:left;
+ 	margin-left:4rem;
+ 	margin-top:-11.9rem;
+ }
+ .price{
+ 	font-size:1.3rem;
+ 	width:7rem;
+ 	height:1.5rem;
+ 	color:red;
+ 	float:left;
+ 	margin-left:12rem;
+ 	margin-top:-7.3rem;
+ }
+ .Number{
+ 	width:6.3rem;
+ 	height:2.1rem;
+ 	float:left;
+ 	margin-left:23rem;
+ 	margin-top:-8.5rem;
+ }
+ .less,.add{
+    width:25px;
+    height:25px;
+    margin: 0;
+    text-align: center;
+    line-height: 100%;
+    border: none;
+    outline: none;
+}
+.inputnum{
+    width:25px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    outline: none;
+}
+.deleteInput{
+ 	float:left;
+ 	width:5rem;
+ 	height:2rem;
+ 	margin-left:12rem;
+ 	margin-top:-9.6rem;
+}
+.delete{
+	border: none;
+	outline: none;
+	color: dodgerblue;
+	background: #fcfcfc;
+	width: 5rem;
+	text-align: center;
+	margin-left:0rem;
+ 	margin-top:4.4rem;
+}
+.delete-one{
+   float:left;
+   margin-top:3rem;
+   margin-left:0rem;
+   background: #e5e5e5;
+   font-size:1.6rem;
+}
+#deleteSelete{
+   color:white;
+   width:7rem;
+   line-height:3rem;
+   background:orange;
+   float:left;
+   margin-top:3rem;
+   margin-left:0rem;
+   font-size:1.6rem;
+   text-align:center;
+}
+.sub{
+	float:left;
+	margin-top:-2rem;
+	margin-left:25rem;
+}
+.sum{
+	float:left;
+	width:3rem;
+	height:2rem;
+	
+   margin-top:-5.5rem;
+   margin-left:26rem;
+   color:orange;
+   font-size:1.3rem;
+   text-align:center;
+}
+.alls{
+   float:left;
+   width:3rem;
+   height:2rem;
+   margin-top:-2.3rem;
+   margin-left:22.5rem;
+   color:orange;
+   font-size:1.3rem;
+   text-align:center;
+}
+
+.emptys{
+	width:25rem;
+	height:13rem;
+	margin:50% auto;
+	display:none;
+}
+.empty{
+	font-size:2rem;
+	color:black;
+}
+
+footer{
+	width:100%;
+	height:5rem;
+}
+.footer{
+	width:100%;
+	height:5rem;
+	background:purple;
+	position:fixed;
+	bottom:0px;
+	display:flex;
+}
+#total{
+	width:30%;
+	height:5rem;	
+	background:floralwhite;
+	color:black;
+	text-align:center;
+	font-size:1.8rem;
+	padding-top:1rem;
+	margin-left:0rem;
+}
+ #sum{
+   width:25%;
+   height:5rem;
+   background:floralwhite;
+   color:orange;
+   padding-top:1.4rem;
+   margin-left:0rem;
+   font-size:1.6rem;
+   text-align:center;
+ }
+ #order { 
+   width:45%;
+   height:5rem;
+   background:purple;
+   color:white;
+   padding-top:1.4rem;
+   margin-left:0rem;
+   font-size:1.6rem;
+   text-align:center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

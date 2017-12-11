@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/myajax.js"></script>
+    <script type="text/javascript" src="../js/confirm.js"></script>
+   	<script type="text/javascript" src="../js/components.js"></script>
+    <style>
+       html,body{
+            height: 100%;
+            background-color: gainsboro;
+        }
+        header{
+            width: 100%;
+            height: 9rem;
+        }
+        .header-container{
+            width: 100%;
+            height: 9rem;
+            background-color: white;
+            position: fixed;
+            top:0;
+            left: 0;
+        }
+        .header-top{
+            width: 100%;
+            height: 5rem;
+            border-bottom: 1px solid gainsboro;
+            box-sizing: border-box;
+            display: flex;
+            position: relative;
+        }
+        .header-top .header-top-left{
+            width: 5%;
+            line-height: 5rem;
+            font-size: 3rem;
+            font-weight: 500;
+            position: absolute;
+            left: 1rem;
+        }
+        .header-top .header-top-right{
+            font-size: 1.8rem;
+            line-height: 5rem;
+            text-align: center;
+        }
+        /*导航栏*/
+        .header-bottom{
+            width: 100%;
+            height: 4rem;
+            line-height: 4rem;
+            display: flex;
+            border-bottom: 1px solid gainsboro;
+            box-sizing: border-box;
+        }
+        .header-bottom li{
+            width: 20%;
+            height: 4rem;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .moren{
+            color: orangered;
+            border-bottom: 2px solid orangered;
+        }
+        .tianjia{
+            border-bottom: 2px solid orangered;
+            color: orangered;
+        }
+        /*section中的样式*/
+        #order li{
+            width: 100%;
+            margin-top: 1rem;
+        }
+        #order li .goods-header{
+            width: 100%;
+            height: 4rem;
+            background-color: white;
+            display: flex;
+        }
+        #order li .goods-header .goods-1{
+            line-height: 4rem;
+            font-size: 1.4rem;
+            font-weight: bolder;
+            padding-left: 1rem;
+            text-align: center;
+            flex: 1;
+        }
+        #order li .goods-header .goods-2{
+            line-height: 4rem;
+            font-size: 2.1rem;
+            font-weight: bolder;
+            flex: 2;
+        }
+        #order li .goods-header .goods-3{
+            line-height: 4rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-align: center;
+            color: orangered;
+            flex: 1;
+        }
+
+        #order li .goods-text{
+            width: 100%;
+            height: 13rem;
+            border-bottom: 1px solid white;
+        }
+        .goods-text .goods-text-top{
+            width: 100%;
+            height: 8rem;
+            display: flex;
+        }
+        #order li .goods-text-top img{
+            width: 6.6rem;
+            height: 6.6rem;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-top: 1rem;
+            margin-left: 3%;
+        }
+       #order li .goods-text-top div{
+           width: 70%;
+           height: 8rem;
+           margin-left: 3%;
+           font-size: 1.2rem;
+           padding-top: 3%;
+           color:black;
+       }
+       .goods-text .goods-text-bottom{
+           width: 100%;
+           height: 5rem;
+           border-bottom: 2px solid white;
+           box-sizing: border-box;
+           display: flex;
+       }
+       .goods-text-bottom span{
+           font-size: 1.2rem;
+           font-weight: bolder;
+           color: black;
+           line-height: 5rem;
+           text-align: center;
+       }
+        .title{
+            width: 100%;
+            height: 4rem;
+            background-color: white;
+            display: flex;
+        }
+        .title .title-1{
+            display: block;
+            width: 45%;
+            height: 4rem;
+            font-size: 1.4rem;
+            font-weight: bolder;
+            padding-left: .8rem;
+            line-height: 4rem;
+            color:black;
+        }
+       .title .title-2{
+           display: block;
+           width: 35%;
+           height: 4rem;
+           font-size: 1.2rem;
+           font-weight: bolder;
+           text-align: center;
+           line-height: 4rem;
+           color: black;
+       }
+       .title button{
+           width: 20%;
+           height: 3.4rem;
+           background-color: orangered;
+           border: 2px solid red;
+           box-sizing: border-box;
+           border-radius: .6rem;
+           margin-right: 2%;
+           margin-top: 0.3rem;
+           font-size: 1.2rem;
+           font-weight: bolder;
+           color: white;
+       }
+
+    </style>
+    <link rel="stylesheet" href="../css/confirm.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="header-top-left"><</div>
+                <div class="header-top-right">订单管理</div>
+            </div>
+            <ul class="header-bottom">
+                <li class="moren">全部</li>
+                <li>待付款</li>
+                <li>待发货</li>
+                <li>待收货</li>
+                <li>待评价</li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <main>
+            <ul id="order">
+
+            </ul>
+        </main>
+        <script>
+            var oOrder = document.querySelector('#order');
+            myajax.get('http://h6.duchengjiu.top/shop/api_order.php', {token: localStorage.token}, function(err, responseText){
+                var json = JSON.parse(responseText);
+                console.log(json);
+                var data = json.data;
+                if (data.length === 0) {
+                    oOrder.innerHTML = "<h3>您的订单为空</h3>";
+                    return;
+                }
+                for (var i = 0; i < data.length; i++) {
+                    var obj = data[i];
+                    //遍历商品列表，拼装HTML
+                    var goodsHTML = '';
+                    for (var j = 0; j < obj.goods_list.length; j++) {
+                        var goods = obj.goods_list[j];
+                        goodsHTML += `
+            <div class="goods-text">
+                <div class="goods-text-top">
+                     <img src="${goods.goods_thumb}">
+                     <div class="text-top-1"> ${goods.goods_name}</div>
+                </div>
+                <div class="goods-text-bottom">
+                    <span class="text-bottom-1">单价：${goods.goods_price}</span>
+                    <span class="text-bottom-1">数量：${goods.goods_number}</span>
+                    <span class="text-bottom-1">小计：${goods.goods_price * goods.goods_number}</span>
+                </div>
+          </div>
+          `;
+                    }
+                    //一件商品的总价
+                    oOrder.innerHTML += `
+                          <li>
+                            <div class="goods-header">
+                                <div class="goods-1">您买的宝贝</div>
+                                <div claSS="goods-2">></div>
+                                <div class="goods-3">交易成功</div>
+                            </div>
+                            <div class="order-goods">
+                                ${goodsHTML}
+                            </div>
+                            <div class="title">
+                                <span class="title-1">收货人：${obj.consignee}</span>
+                                <span class="title-2">总价:${obj.total_prices}</span>
+                                <button data-id="${obj.order_id}" class="cancel-order">取消订单</button>
+                            </div>
+                          </li>
+                          `;
+                }
+            });
+
+            oOrder.addEventListener("touchstart",function(event) {
+                event = event || window.event;
+                var target = event.target || event.srcElement;
+                if (target.className === 'cancel-order') {
+                    if (!confirm('确认要取消订单吗?')) {
+                        return;
+                    }
+                    var order_id = target.dataset.id;
+                    myajax.post('http://h6.duchengjiu.top/shop/api_order.php?token='+localStorage.token+'&status=cancel', {order_id}, function(err, responseText) {
+                        var json = JSON.parse(responseText);
+                        if (json.code === 0) {
+                            alert('订单取消成功');
+                        }
+                    });
+                }
+            },false)
+        </script>
+    </section>
+    <script>
+        var oLi = document.querySelector('.header-bottom').querySelectorAll("li");
+        for(var i=0;i<oLi.length;i++){
+            oLi[i].index=i;
+            oLi[i].addEventListener('touchstart', function(event) {
+                if (event.targetTouches.length == 1) {
+                    event.preventDefault();
+                    var touch = event.targetTouches[0];
+                    for(var j=0;j<oLi.length;j++){
+                        oLi[j].className="";
+                    }
+                    this.className="tianjia";
+                }
+            }, false);
+        }
+
+        var oFanhui=document.querySelector(".header-top-left");
+        oFanhui.addEventListener('touchstart', function(event) {
+            if (event.targetTouches.length == 1) {
+                event.preventDefault();
+                var touch = event.targetTouches[0];
+                window.history.back(-1);
+            }
+        }, false);
+
+    </script>
+   	</section>
+   	
+</body>
+</html>

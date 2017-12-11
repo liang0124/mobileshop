@@ -1,0 +1,103 @@
+.TPL-username {
+    width: 20rem;
+    height: 3rem;
+    margin: 10rem auto 0;
+    border-bottom: 1px solid red;
+    text-align: center;
+}
+
+div {
+    width: auto;
+    height: auto;
+}
+
+.tpl {
+    width: 20rem;
+    height: 3rem;
+    margin: 3rem auto 0;
+    border-bottom: 1px solid red;
+    text-align: center;
+}
+
+.login-input1,
+.login-input2 {
+    width: 20rem;
+    height: 3rem;
+    margin-top: -2px;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.login-input1::-webkit-input-placeholder,
+.login-input2::-webkit-input-placeholder {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.login-register {
+    margin-right: 1.6rem;
+    float: right;
+    margin-top: 2.5rem;
+}
+
+.login-register>a {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.middlelist {
+    text-align: center;
+}
+
+.TPL-login>input {
+    height: 4rem;
+    width: 20rem;
+    margin: 5rem auto 0;
+    text-align: center;
+    border-radius: 2rem;
+    border: 0;
+    font-size: 1.7rem;
+    color: #ccc;
+    background: -webkit-linear-gradient(left, #ff9000, #ff5000) no-repeat;
+    box-shadow: 0 0.08rem 0.16rem #f7c7b1;
+}
+
+input {
+    outline: none;
+}
+
+.toast {
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    padding: 10px 5px;
+    background: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;
+}
+
+@media screen and (min-width:412px) {
+    .toast {
+        top: 45%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .toast {
+        top: 45%;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .toast {
+        top: 40%;
+    }
+}

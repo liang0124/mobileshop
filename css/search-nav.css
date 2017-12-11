@@ -1,0 +1,74 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.search-result {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f6;
+}
+
+.input-group {
+    width: 100%;
+    height: 5rem;
+}
+.search-nav{
+	width: 100%;
+	height: 5rem;
+	background-color: #fff;
+	position: relative;
+}
+
+.search-nav div {
+    float: left;
+}
+
+.search-nav .return1 {
+    margin-top: 1.4rem;
+    margin-left: 0.8rem;
+    width: 10%;
+    height: 1.8rem;
+    border-radius: 10px;
+}
+
+.return1 a img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.search-text {
+    margin: 8px;
+    margin-left: 0;
+    width: 70%;
+    height: 3.6rem;
+    border-bottom: 1px solid #333;
+}
+.search-text input{
+	width: 90%;
+	height:3.5rem ;
+	border: none;
+	font-size: 16px;
+	color: #000;
+	background-color: #fff;
+	outline: none;
+}
+
+.search-text a img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.searchage {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    float: right;
+    width: 10%;
+    height: 3rem;
+}
+
+.searchage a img {
+    width: 2.2rem;
+    height: 2.2rem;
+}

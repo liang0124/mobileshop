@@ -1,0 +1,206 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    height: auto;
+    width: auto;
+}
+
+body {
+    /* background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%); */
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.top-search {
+    background: #D3CDCE;
+}
+
+.carousel-box {
+    margin-top: 5rem;
+}
+
+.carousel-indicators {
+    bottom: auto;
+}
+
+div {
+    height: auto;
+}
+
+.category {
+    width: 100%;
+    padding: 0;
+}
+
+.category ul {
+    overflow: hidden;
+}
+
+.category-list {
+    width: 20%;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #fff;
+    margin-top: .3rem;
+}
+
+.category-list>a {
+    font-weight: normal;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #fff;
+    padding-left: 1px;
+}
+
+.last {
+    border-right: none;
+}
+
+.title {
+    background: #fff;
+}
+
+.title>h3 {
+    display: inline-block;
+    margin: 0;
+    color: #f47920;
+    font-size: 14px;
+}
+
+.hot-li {
+    width: 50%;
+    height: 30%;
+    box-sizing: border-box;
+    border: 1px solid #f47920;
+    float: left;
+}
+
+.hot-li>a {
+    display: inline-block;
+    width: 100%;
+}
+
+.hot-li>a>img {
+    width: 80%;
+}
+
+.hot-li span {
+    text-align: center;
+    /* padding: auto 0.8rem; */
+    width: 2rem;
+    float: right;
+    height: 100%;
+    /* font-size: 1.9rem; */
+    font-family: 微软雅黑;
+    color: #fff;
+}
+
+.hot-box>ul {
+    overflow: hidden;
+}
+
+.bottom-account {
+    bottom: 0px;
+    height: 3rem;
+    background: #f47920;
+}
+
+.bottom-btn {
+    float: left;
+    width: 33.333%;
+    height: 100%;
+}
+
+.bottom-btn a {
+    display: block;
+    height: 100%;
+    width: 3rem;
+    margin: auto;
+}
+
+.btn-account>a {
+    background: url(../img/account.png)no-repeat;
+}
+
+.btn-cart>a {
+    background: url(../img/cart.png)no-repeat;
+}
+
+.btn-home>a {
+    background: url(../img/home.png)no-repeat;
+}
+
+.nav-list .index-cat {
+    background: #fff;
+}
+
+.nav-list .index-cat li a {
+    color: #000;
+}
+
+#hot-goods div li p {
+    padding: 0;
+}

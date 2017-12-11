@@ -1,0 +1,109 @@
+.nav-list {
+  height: 5rem;
+}
+
+
+.cat {
+  width: 100%;
+  height: 5rem;
+  background: pink;
+}
+
+.cat li {
+  width: 18%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  float: left;
+  text-align: center;
+  margin-left: 0.5rem;
+  border: 1px solid #F1F1F1;
+  border-bottom: 0;
+  box-sizing: border-box;
+}
+
+.cat li a {
+  color: white;
+}
+
+.goods-list {
+  width: 100%;
+}
+
+#hot-goods {
+  width: 100%;
+}
+
+#hot {
+  width: 50%;
+  height: 22.5rem;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  float: left;
+  padding: .5rem;
+  background: #FAFAFA;
+}
+
+#hot li img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 5px;
+}
+
+#hot li p {
+  width: 100%;
+  height: 3.5rem;
+  overflow: hidden;
+  padding: 1rem 0;
+  color: #4b566a;
+}
+
+#hot li span {
+  height: 3.5rem;
+  line-height: 3.5rem;
+  color: orange;
+}
+
+.backtotop {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  display: none;
+}
+
+.backtotop a img {
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-account {
+  bottom: 0px;
+  height: 3rem;
+  background: pink;
+}
+
+.bottom-btn {
+  float: left;
+  width: 33.333%;
+  height: 100%;
+}
+
+.bottom-btn a {
+  display: block;
+  height: 100%;
+  width: 3rem;
+  margin: auto;
+}
+
+.btn-account>a {
+  background: url(../img/account.png)no-repeat;
+}
+
+.btn-cart>a {
+  background: url(../img/cart.png)no-repeat;
+}
+
+.btn-home>a {
+  background: url(../img/home.png)no-repeat;
+}

@@ -1,0 +1,142 @@
+body{
+	height: 100%;
+	width: 100%;
+	background: #eee;
+	position: relative;
+}
+.header-box{
+	width: 100%;
+	height: 5rem;
+	background: pink;
+	color: white;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 2rem;
+}
+.header-box-left{
+	color: white;
+	line-height: 5rem;
+}
+.prev{
+	width:1.5rem;
+	height:1.5rem;
+	position:absolute;
+	top:1.75rem;
+	left:2rem;
+}
+.header-box-left span{
+	color:white;
+	font-size:2rem;
+	margin-left: 3rem;
+}
+.header-box input{
+	display: inline-block;
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	height: 4rem;
+	border: 0;
+	width: 10rem;
+	outline: none;
+	background: pink;
+}
+.address-list li{
+	margin-top: 1rem;
+	width: 100%;
+	height: 6rem;
+	background:#fff;
+	padding: 1.5rem;
+	position: relative;
+	font-size: 1.2rem;
+}
+.people{
+	display: inline-block;
+	width: 50%;
+	position: absolute;
+}
+.tel{
+	display: inline-block;
+	width: 50%;
+	position: absolute;
+	right: 0;
+}
+.alladdress{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+}
+.delete{
+	display: inline-block;
+	position: absolute;
+	top: 70%;
+	right: 10%;
+	width: 10%;
+	height:1.5rem;
+      /*padding-left: 5px;
+      padding-right: 5px;*/
+      border-radius: 5px;
+      background-color: pink;
+      color: white;
+      line-height: 1.5rem;
+      text-align: center;
+}
+.address-ul li.selected {
+      border: 1px solid pink;
+}
+.add-address{
+	height: 5rem;
+	background:pink ;
+	text-align: center;
+	line-height: 5rem;
+	position: fixed;
+	bottom: 0;
+}
+.add-address a{
+	color: white;
+	font-size: 2rem;
+}
+.address-ul h2{
+	text-align: center;
+	margin-top: 50%;
+	font-size: 1.5rem;
+}
+div{
+	height: auto;
+	width: 100%;
+}
+.toast {
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    padding: 10px 5px;
+    background: #000;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;
+}
+
+@media screen and (min-width:412px) {
+    .toast {
+        top: 45%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .toast {
+        top: 45%;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .toast {
+        top: 40%;
+    }
+}
+.address-list{
+	overflow: hidden;
+}

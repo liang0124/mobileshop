@@ -1,0 +1,84 @@
+.header-box{
+	width: 100%;
+	height: 2.8rem;
+	background: pink;
+	color: white;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.header-box-left{
+	color: white;
+	line-height: 3rem;
+}
+.prev{
+	width:1rem;
+	height:1rem;
+	position:absolute;
+	top:1rem;
+	left:1rem;
+}
+.header-box-left span{
+	color:white;
+	font-size:1rem;
+	margin-left: 1rem;
+}
+.header-box input{
+	display: inline-block;
+	position: absolute;
+	right: 1rem;
+	top: 0.5rem;
+	height: 2rem;
+	font-size: 1rem;
+	border: 0;
+	width: 5rem;
+	outline: none;
+	background: pink;
+}
+label{
+	display: block;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 100%;
+	height: 3rem;
+	border-bottom: 1px solid pink;
+	margin-top: 1rem;
+	line-height: 3rem;
+}
+.all{
+	display: block;
+	width: 100%;
+	height: 6rem;
+}
+label span{
+	width: 30%;
+	height: 2.5rem;
+	display: inline-block;
+}
+label input{
+	display: inline-block;
+	height: 2.5rem;
+	width: 60%;
+	border: 0;
+	outline: none;
+}
+.moren-address{
+	width: 100%;
+	height: 2rem;
+	color:pink;
+	margin-top: 2rem;
+	padding-left: 1rem;
+	font-size: 1.5rem;
+	padding-right: 1rem;
+	line-height: 2rem;
+}
+.moren-address input{
+	float: right;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 0;
+	outline: none;
+}
+div,a{
+	height: auto;
+	width: auto;
+}

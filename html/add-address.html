@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	<link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/confirm.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/add-address.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-weui.min.css" type="text/css"/>
+    
+    
+	</head>
+	<body>
+	<div class="header-box">
+		<div class="header-box-left">
+			<img src="../img/prev.png" alt="" class="prev">
+			<span>管理收货地址</span>
+		</div>
+        <input type="button" class="add" value="保存"/>
+    </div>
+    <div class="container">
+  		<form>
+  			<label>
+                <span>收货人</span>
+                <input type="text" name="consignee">
+            </label>
+            <label>
+                <span>联系电话</span>
+                <input type="text" name="mobile">
+            </label>
+            <label>
+              	<span>所在地区</span>
+              	<input type='text' name="province" id='city-picker'/>
+            </label>
+            <label>
+                <span>街道</span>
+                <input type="text" name="district">
+            </label>
+            <label class="all">
+                <input type="text" name="address" placeholder="详细地址">
+            </label>
+            <!--<div class="moren-address">
+  				<span>设为默认地址</span>
+  				<input type="checkbox" />
+  			</div>-->
+  		</form>
+  	</div>
+  	<script type="text/javascript" src="../js/myajax.js" ></script>
+  	<script type="text/javascript" src="../js/confirm.js" ></script>
+  	<script type="text/javascript" src="../js/add-address.js" ></script>
+  	<script type="text/javascript" src="../js/components.js" ></script>
+  	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="../js/city-picker.min.js"></script>
+	<script>
+    $("#city-picker").cityPicker({
+        title: "选择省市区/县",
+        onChange: function (picker, values, displayValues) {
+            console.log(values, displayValues);
+        }
+    });
+	</script>
+	</body>
+</html>

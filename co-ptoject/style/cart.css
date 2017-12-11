@@ -1,0 +1,104 @@
+ main {
+   width: 1000px;
+   margin: auto;
+   font-size: 15px;
+   
+ }
+tr{
+   padding: 10px;
+   vertical-align: middle;
+   margin-top: 20px;
+   display: block;
+   border-radius: 20px;
+   background: #fcfcfc;
+   border: 1px solid #ccc;
+   
+}
+main>div{
+   padding: 10px;
+   vertical-align: middle;
+   margin-top: 30px;
+   background: #e5e5e5;
+   border-radius: 10px;
+   
+}
+ td{
+   width: 170px;
+   padding: 10px;
+   vertical-align: middle;
+   color: dodgerblue;
+ }
+ main div div{
+ 	margin-right: 20px;
+ 	float: right;
+ 	display: inline-block;
+ 	
+ }
+ .goodsId{
+ 	color: #FCFCFC;
+ }
+ .goodsName{
+ 	width: 250px;
+ }
+ .pink-color{
+ 	color: #FF3366;
+ 	padding-left: 40px;
+ }
+.delete{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: dodgerblue;
+	background: #fcfcfc;
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+.deleteInput{
+	width: 200px;
+}
+ table {
+   border-collapse: collapse;
+   width: 100%;
+   
+ }
+
+ table img {
+   border-radius: 50%;
+   width: 100px;
+ }
+
+ #order {
+   color: #FF3366;
+   font-size: 20px;
+   margin-left: 20px;
+ }
+ #sum{
+ 	color: #FF3366;
+ }
+ #clear-cart{
+ 	cursor: pointer;
+ 	color: dodgerblue;
+ 	margin-left: 50px;
+ }
+ #total{
+ 	color: dodgerblue;
+ 	
+ }
+.less,.add{
+    width:25px;
+    height: 25px;
+    margin: 0;
+    text-align: center;
+    line-height: 100%;
+    border: none;
+    outline: none;
+}
+.inputnum{
+    width:25px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    outline: none;
+}

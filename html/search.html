@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>search</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/search-nav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/search.css" />
+	</head>
+
+	<body>
+		<!--搜索导航栏-->
+		<div id="searchResult" class="search-result">
+			<nav class="search-nav">
+				<div id="return1" class="return1">
+					<a href="../index.html">
+						<img src="../img/tao.gif" />
+					</a>
+				</div>
+				<div id="searchText" class="search-text">
+					<input id="search" type="text" placeholder="寻找喜爱的宝贝店铺">
+					<a class="search-text-img" href="javascript:">
+						<img id="searchText" src="../img/search1.png" />
+					</a>
+				</div>
+				<div id="searchPage" class="searchage">
+					<a href="../index.html ">
+						<img src="../img/return2.png" />
+					</a>
+				</div>
+			</nav>
+
+			<!--搜索产品-->
+			<div id="searchList " class="search-list ">
+				<ul id="hot-goods"></ul>
+			</div>
+
+			<!--回到顶部-->
+			<a href="javascript:;" id="returnTop" class="returnTop">
+				<div class="return-top">
+					<img src="../img/top.png" />
+				</div>
+			</a>
+		</div>
+
+		<!--回到顶部-->
+		<script type="text/javascript" src="../js/backtotop.js"></script>
+		
+		<script type="text/javascript" src="../js/myajax.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../js/search.js"></script>
+		<script type="text/javascript" src="../js/search-nav.js"></script>
+
+	</body>
+
+</html>

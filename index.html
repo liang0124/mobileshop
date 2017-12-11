@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商城首页</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/search-nav.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handleAjax.js"></script>
+
+    <!--搜索导航-->
+</head>
+
+<body>
+    <nav class="navbar-fixed-top top-search">
+        <!--搜索导航-->
+        <div class="input-group search-input-group">
+            <div class="search-nav">
+                <div id="return1" class="return1">
+                    <a href="index.html">
+                        <img src="img/tao.gif" />
+                    </a>
+                </div>
+                <div id="searchText" class="search-text">
+                    <input id="search" type="text" placeholder="寻找喜爱的宝贝店铺">
+                    <a class="search-text-img" href="javascript:">
+                        <img id="searchText" src="img/search1.png" />
+                    </a>
+                </div>
+                <div id="searchPage" class="searchage">
+                    <a href="index.html ">
+                        <img src="img/return2.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="carousel-example-generic" class="carousel slide carousel-box" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="">
+                    <img src="img/TB24UoIXPlxYKJjSZFuXXaYlVXa_!!103-0-luban.jpg_q50.jpg" alt="...">
+                </a>
+            </div>
+            <div class="item">
+                <img src="img/TB2pfIsgjihSKJjy0FiXXcuiFXa_!!167-0-luban.jpg_q50.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="img/TB2RfGghbsTMeJjSszhXXcGCFXa_!!59-0-luban.jpg_q50.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="img/TB2STxOdqigSKJjSsppXXabnpXa_!!149-0-luban.jpg_q50.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="img/TB2uuFakBUSMeJjy1zjXXc0dXXa_!!166-0-luban.jpg_q50.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img src="img/TB2UX0LhHwTMeJjSszfXXXbtFXa_!!62-0-luban.jpg_q50.jpg" alt="...">
+            </div>
+        </div>
+    </div>
+    <div class="nav-list">
+        <!-- <div class="container-fluid title">
+            <h3>商品分类</h3>
+        </div> -->
+        <ul id="cat" class="cat index-cat"></ul>
+    </div>
+    <div class="goods-list">
+        <!-- <div class="container-fluid title">
+            <h3>热门商品</h3>
+        </div> -->
+        <div class="hot-box">
+            <ul id="hot-goods"></ul>
+        </div>
+    </div>
+    <!-- <div class="nav-list">
+        <ul id="cat" class="cat"></ul>
+    </div> -->
+    <!-- <div class="goods-list">
+        <ul id="hot-goods"></ul>
+    </div> -->
+    <nav class="navbar-fixed-bottom bottom-account">
+        <div class="bottom-btn btn-home" id="btn-home">
+            <a href=""></a>
+        </div>
+        <div class="bottom-btn btn-cart" id="btn-cart">
+            <a href=""></a>
+        </div>
+        <div class="bottom-btn btn-account" id="btn-account">
+            <a href="html/register-login.html"></a>
+        </div>
+    </nav>
+    <div id="backto">
+        <a href="javascript:;" class="backtotop" id="backtotop"><img src="img/top.png" /></a>
+    </div>
+</body>
+<!--搜索导航-->
+<script src="js/index.js"></script>
+<script type="text/javascript" src="js/backtotop.js"></script>
+<script type="text/javascript" src="js/myajax.js"></script>
+<script type="text/javascript" src="js/search-nav.js"></script>
+<script type="text/javascript">
+    var oSearch = document.querySelector('#search');
+    oSearch.onkeyup = function(event) {
+        if (event.keyCode === 13) {
+            location.href = 'html/search.html?search_text=' + this.value;
+        }
+        localStorage.searchTxt = this.value;
+    }
+    var oSearchText = document.querySelector(".search-text-img");
+    oSearchText.onclick = function(event) {
+        location.href = 'html/search.html?search_text=' + localStorage.searchTxt;
+    }
+</script>
+<script src="js/3-bottom.js"></script>
+
+</html>

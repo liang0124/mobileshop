@@ -1,0 +1,122 @@
+.mask {
+    width: 60%;
+    height: 15%;
+    left: 20%;
+    top: 20%;
+    position: absolute;
+    font-size: 16px;
+    background: pink;
+    /*禁止用户选择*/
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;  
+    border-radius: 8px;
+    text-align: center;
+}
+
+.confirm {
+    width: 100%
+    height: 100%;
+    padding-top: 5rem;
+}
+.confirm-title {
+    width: 100%;
+    color: white; 
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    
+}
+.cancel,.ok {
+    width: 50%;
+    font-size: 1.2rem;
+    color: white;
+  	/*margin-top: 1rem;*/
+  	
+}
+.ok{
+	position: absolute;
+  	top: 50%;
+  	left: 0;
+}
+.cancel{
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+}
+
+   
+    /*width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 16px;
+    /*禁止用户选择
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 9999;
+}
+
+.confirm {
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    padding: 10px 5px;
+    margin-top: -60px;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.confirm div.title {
+    margin: 10px 0px;
+    width: 350px;
+    line-height: 40px;
+    border-radius: 8px;
+    color: #ccc;
+    background: #000;
+    height: 40px;
+}
+
+.confirm span.ok,
+.confirm span.cancel {
+    display: inline-block;
+    width: 6rem;
+    height:3rem;
+    margin-right: 20%;
+    padding: 5px;
+    color: white;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.confirm span.ok {
+    float: left;
+    margin-left:20%;
+}
+
+.confirm span.cancel {
+    float: right;
+    margin-right: 20%;
+}
+
+.confirm span.ok:hover,
+.confirm span.cancel:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+<<<<<<< HEAD
+>>>>>>> 9d4c54a2412d29994de22a5613e1c2e759b34a3d*/
+
