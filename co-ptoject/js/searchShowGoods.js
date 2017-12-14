@@ -10,7 +10,7 @@ myajax.get('http://h6.duchengjiu.top/shop/api_goods.php', { search_text: search_
     var data = json.data;
     //如果没数据要给出提示
     if (data.length === 0) {
-      oGoods.innerHTML = "未搜索到商品, <span id='second'>5</span>秒后跳回首页";
+      oGoods.innerHTML = `<div class="">未搜索到商品, <span id='second'>5</span>秒后跳回首页</div>`;
       var oSecond = oGoods.querySelector('#second');
       var timer = setInterval(() => {
         var second = parseInt(oSecond.innerText);

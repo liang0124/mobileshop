@@ -144,7 +144,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.putaway {
+  color: white;
+  background: pink;
+  width: 150px;
+  height: 30px;
+  margin: 200px auto;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
 
+}
 .toast {
   width: 200px;
   text-align: center;

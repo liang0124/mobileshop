@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/login.css">
     <link rel="stylesheet" href="../style/confirm.css">
-    </style>
+
     <title>订单页</title>
 </head>
 
@@ -36,7 +36,6 @@
                         oLogout.style.display = 'inline';
                         oRegister.style.display = 'none';
                         oLogin.style.display = 'none';
-<<<<<<< HEAD
                     } else {
                         var oRegister = document.querySelector('.register');
                         var oLogin = document.querySelector('.login');
@@ -44,8 +43,6 @@
                         oLogin.style.display = 'inline';
                         var oLogout = document.querySelector('.logout');
                         oLogout.style.display = 'none';
-=======
->>>>>>> 3ff14067419b89941f1e9a9be82ed742dedbf16a
                     }
                 </script>
                 <li><a href="cart.html">购物车</a></li>
@@ -79,7 +76,6 @@
         <script src="../js/nav.js"></script>
         <script src="../js/confirm.js"></script>
     </div>
-    </nav>
     <div class="orderHead">
         <ul>
             <li class="headpic">图片</li>
@@ -181,10 +177,6 @@
         <p id="footer-box2">© 2003-2017 TMALL.COM 版权所有</p>
     </div>
     <script src="../js/components.js"></script>
-    <!-- ======= oOrder.onclick = function(event) { event = event || window.event; var target = event.target || event.srcElement; if (target.className === 'cancel') { if (!confirm('确认要取消订单吗?')) { return; } var order_id = target.dataset.id; myajax.post("http://h6.duchengjiu.top/shop/api_order.php?token="
-    + localStorage.token + "&status=cancel", { order_id }, function(err, responseText) { var json = JSON.parse(responseText); if (json.code === 0) { console.log(json); target.parentNode.parentNode.parentNode.removeChild(target.parentNode.parentNode);
-    toast('订单取消成功'); } }); } }
-    </script> -->
     <div class="footer" style="border-top: 1px solid #000;margin-top: 360px;">
         <p id="footer-box">
             <a href="#">关于天猫</a>
@@ -203,7 +195,6 @@
         <p id="footer-box2">© 2003-2017 TMALL.COM 版权所有</p>
     </div>
     <script src="../js/components.js"></script>
-    >>>>>>> 2663bdd39e81558d23559b8c1ad8266c6d8cfdd1
 </body>
 
 </html>

@@ -8,7 +8,7 @@ header{
 .header{
 	width:100%;
 	height:5rem;
-	background:deeppink;
+	background:pink;
 	position:fixed;
 	top:0px;
 	z-index:9;
@@ -63,7 +63,7 @@ header{
 .no4 .list-two{
 	width:13rem;
 	height:20rem;
-	background:#fcf9f9;*/
+	background:#fcf9f9;
 	margin-top:2.5rem;
 	margin-left:-8.4rem;
 	display:none;
@@ -83,9 +83,7 @@ header{
 	font-size:1.8rem;
 }
 /*=====================头部========================*/
-section{
-	height:
-}
+
 .good{
 	width:100%;
 	height:50rem;	
@@ -184,30 +182,32 @@ footer{
 	font-size:1.8rem;
 	margin-left:0rem;
 	margin-top:0rem;
-	background:orange;
+	background:pink;
 	text-align:center;
 	position:relative;
 }
+.addTo a {
+	color: white;
+}
 .buy{
 	/*float:left;*/
-	position:absolute;
+	/* position:absolute; */
 	top:0rem;
 	left:24.1rem;
 	font-size:1.8rem;
-	background:red;
 	width:30%;
 	line-height:5rem;
 	font-size:1.8rem;
 	margin-left:0rem;
 	margin-top:0rem;
-	background:orangered;
+	background:rgb(241, 112, 64);
 	color:white;
 	text-align:center;
 	/*position:relative;*/
 }
 .no-buy{
 	width:100%;
-	height:14rem;
+	height:5rem;
 	background:#ddd9d9;
 	position:absolute;
 	bottom:4.9rem;
